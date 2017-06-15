@@ -1,13 +1,13 @@
 ## 采用技术框架
-新的项目架构以Spring Boot为核心技术框架, 主要集成了以下框架
+项目架构以Spring Boot为核心技术框架, 主要集成了以下框架
 - Spring Data JPA
 - Spring Session
 - Spring Cache
 - Spring WebSocket
 - Spring Validation
 - Spring Mockito
-- Mybatis
 - Redisson
+- thymeleaf
 
 ------------
 
