@@ -29,6 +29,8 @@ public class JpaConfig {
     private String url;
     @Value("${druid.userName}")
     private String userName;
+    @Value("${druid.password}")
+    private String password;
     @Value("${druid.driverClassName}")
     private String driverClassName;
     @Value("${druid.maxActive}")
@@ -49,11 +51,13 @@ public class JpaConfig {
     private Integer timeBetweenEvictionRunsMillis;
     @Value("${jpa.scanEntityPackage}")
     private String scanEntityPackage;
+
     @Bean
     public DataSource dataSource() throws SQLException {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setUrl(url);
         druidDataSource.setUsername(userName);
+        druidDataSource.setPassword(password);
         druidDataSource.setDriverClassName(driverClassName);
         druidDataSource.setMaxActive(maxActive);
         druidDataSource.setMaxWait(maxWait);

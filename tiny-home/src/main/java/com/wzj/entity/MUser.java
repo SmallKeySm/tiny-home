@@ -2,8 +2,8 @@ package com.wzj.entity;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "m_user")
+//@Entity
+//@Table(name = "m_user")
 public class MUser extends BaseEntity<MUser> {
 
     private static final long serialVersionUID = 6457327002664458111L;
